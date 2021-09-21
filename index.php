@@ -15,12 +15,32 @@ Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
      <title>Document</title>
  </head>
  <body>
-     <h1>
+
+
+    <?php $badword = $_GET["badword"]?>
+
+
+
+ 
+
+     <h2>
          <?php $text="
-         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae eveniet facilis impedit suscipit repudiandae voluptatibus aut? Est ipsam veritatis, expedita odit, dolorum tenetur dicta fuga voluptas autem animi esse amet.";
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eveniet facilis impedit suscipit repudiandae voluptatibus aut? Est ipsam veritatis, expedita odit, dolorum tenetur dicta fuga voluptas autem animi esse amet.";
          echo $text; 
          ?>
-     </h1>
+     </h2>
      <h2><?php echo strlen($text); ?></h2>
+
+     
+     <?php $censored_text = str_replace($badword , '***', $text);?>
+     <h1><?php echo $censored_text; ?> 
+     <br>
+     <?php echo strlen($censored_text); ?> 
+    
+    
+    </h1>
+
+
+
  </body>
  </html>
