@@ -15,6 +15,12 @@ Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
      <title>Document</title>
  </head>
  <body>
-     <?php echo "prova" ?>
+     <h1>
+         <?php $text="
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae eveniet facilis impedit suscipit repudiandae voluptatibus aut? Est ipsam veritatis, expedita odit, dolorum tenetur dicta fuga voluptas autem animi esse amet.";
+         echo $text; 
+         ?>
+     </h1>
+     <h2><?php echo strlen($text); ?></h2>
  </body>
  </html>
