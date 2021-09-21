@@ -16,9 +16,9 @@ Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
  </head>
  <body>
 
-    <form method="GET" action="index.php">
-        <input type="text" name="badword">
-    </form>
+    <!-- <form method="GET" action="index.php">
+        <input type="text" name="badword" placeholder="Inserisci qui la parola da escludere">
+    </form> -->
 
     <?php $badword = $_GET["badword"]?>
 
